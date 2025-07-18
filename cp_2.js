@@ -40,3 +40,10 @@ function displayProducts(products) {
             container.appendChild(card);
     });
 }
+
+function handleError(error) {
+    console.error('An error occurred while fetching this product: ${error.message}');   
+}
+
+fetchProductsThen(); // Call the function to fetch products using .then()
+fetchProductsAsync(); // Call the function to fetch products using async/await
