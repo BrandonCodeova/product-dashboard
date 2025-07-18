@@ -42,8 +42,8 @@ function displayProducts(products) {
 }
 
 function handleError(error) {
-    console.error('An error occurred while fetching this product: ${error.message}');   
+    console.error(`An error occurred while fetching this product: ${error.message}`);   
 }
 
-fetchProductsThen(); // Call the function to fetch products using .then()
-fetchProductsAsync(); // Call the function to fetch products using async/await
+//fetchProductsThen();
+fetchProductsAsync(); // Main fetch call
